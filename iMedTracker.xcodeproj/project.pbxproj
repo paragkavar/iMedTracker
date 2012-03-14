@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8430276150FD01300938051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430275150FD01300938051 /* UIKit.framework */; };
+		D8430278150FD01300938051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430277150FD01300938051 /* Foundation.framework */; };
+		D843027A150FD01300938051 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430279150FD01300938051 /* CoreGraphics.framework */; };
+		D8430280150FD01300938051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D843027E150FD01300938051 /* InfoPlist.strings */; };
+		D8430282150FD01300938051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8430281150FD01300938051 /* main.m */; };
+		D8430286150FD01300938051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8430285150FD01300938051 /* AppDelegate.m */; };
+		D8430289150FD01300938051 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8430287150FD01300938051 /* MainStoryboard.storyboard */; };
+		D843028E150FD01300938051 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D843028D150FD01300938051 /* first.png */; };
+		D8430290150FD01300938051 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D843028F150FD01300938051 /* first@2x.png */; };
+		D8430295150FD01300938051 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D8430294150FD01300938051 /* second.png */; };
+		D8430297150FD01300938051 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8430296150FD01300938051 /* second@2x.png */; };
+		D843029F150FD01300938051 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D843029E150FD01300938051 /* SenTestingKit.framework */; };
+		D84302A0150FD01300938051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430275150FD01300938051 /* UIKit.framework */; };
+		D84302A1150FD01300938051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430277150FD01300938051 /* Foundation.framework */; };
+		D84302A9150FD01400938051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D84302A7150FD01400938051 /* InfoPlist.strings */; };
+		D84302AC150FD01400938051 /* iMedTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84302AB150FD01400938051 /* iMedTrackerTests.m */; };
+		D84302B7150FD0B200938051 /* ScheduleMedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84302B6150FD0B200938051 /* ScheduleMedsViewController.m */; };
+		D8DF90761511001800C2E35D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF90751511001800C2E35D /* DetailViewController.m */; };
+		D8DF907A151102B800C2E35D /* Medecine.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF9079151102B800C2E35D /* Medecine.m */; };
+		D8DF907D1511214300C2E35D /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907C1511214300C2E35D /* clock.png */; };
+		D8DF907F1511233B00C2E35D /* pill.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907E1511233B00C2E35D /* pill.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D84302A2150FD01300938051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8430268150FD01300938051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8430270150FD01300938051;
+			remoteInfo = iMedTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8430271150FD01300938051 /* iMedTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMedTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8430275150FD01300938051 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8430277150FD01300938051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8430279150FD01300938051 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D843027D150FD01300938051 /* iMedTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iMedTracker-Info.plist"; sourceTree = "<group>"; };
+		D843027F150FD01300938051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8430281150FD01300938051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8430283150FD01300938051 /* iMedTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMedTracker-Prefix.pch"; sourceTree = "<group>"; };
+		D8430284150FD01300938051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8430285150FD01300938051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8430288150FD01300938051 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D843028D150FD01300938051 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		D843028F150FD01300938051 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		D8430294150FD01300938051 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		D8430296150FD01300938051 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		D843029D150FD01300938051 /* iMedTrackerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMedTrackerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D843029E150FD01300938051 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D84302A6150FD01300938051 /* iMedTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iMedTrackerTests-Info.plist"; sourceTree = "<group>"; };
+		D84302A8150FD01400938051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D84302AA150FD01400938051 /* iMedTrackerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMedTrackerTests.h; sourceTree = "<group>"; };
+		D84302AB150FD01400938051 /* iMedTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMedTrackerTests.m; sourceTree = "<group>"; };
+		D84302B5150FD0B200938051 /* ScheduleMedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleMedsViewController.h; sourceTree = "<group>"; };
+		D84302B6150FD0B200938051 /* ScheduleMedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleMedsViewController.m; sourceTree = "<group>"; };
+		D8DF90741511001800C2E35D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D8DF90751511001800C2E35D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D8DF9078151102B800C2E35D /* Medecine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medecine.h; sourceTree = "<group>"; };
+		D8DF9079151102B800C2E35D /* Medecine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medecine.m; sourceTree = "<group>"; };
+		D8DF907C1511214300C2E35D /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		D8DF907E1511233B00C2E35D /* pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pill.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D843026E150FD01300938051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8430276150FD01300938051 /* UIKit.framework in Frameworks */,
+				D8430278150FD01300938051 /* Foundation.framework in Frameworks */,
+				D843027A150FD01300938051 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8430299150FD01300938051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D843029F150FD01300938051 /* SenTestingKit.framework in Frameworks */,
+				D84302A0150FD01300938051 /* UIKit.framework in Frameworks */,
+				D84302A1150FD01300938051 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8430266150FD01300938051 = {
+			isa = PBXGroup;
+			children = (
+				D843027B150FD01300938051 /* iMedTracker */,
+				D84302A4150FD01300938051 /* iMedTrackerTests */,
+				D8430274150FD01300938051 /* Frameworks */,
+				D8430272150FD01300938051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8430272150FD01300938051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8430271150FD01300938051 /* iMedTracker.app */,
+				D843029D150FD01300938051 /* iMedTrackerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8430274150FD01300938051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8430275150FD01300938051 /* UIKit.framework */,
+				D8430277150FD01300938051 /* Foundation.framework */,
+				D8430279150FD01300938051 /* CoreGraphics.framework */,
+				D843029E150FD01300938051 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D843027B150FD01300938051 /* iMedTracker */ = {
+			isa = PBXGroup;
+			children = (
+				D8430284150FD01300938051 /* AppDelegate.h */,
+				D8430285150FD01300938051 /* AppDelegate.m */,
+				D8430287150FD01300938051 /* MainStoryboard.storyboard */,
+				D843028D150FD01300938051 /* first.png */,
+				D843028F150FD01300938051 /* first@2x.png */,
+				D8430294150FD01300938051 /* second.png */,
+				D8430296150FD01300938051 /* second@2x.png */,
+				D843027C150FD01300938051 /* Supporting Files */,
+				D84302B5150FD0B200938051 /* ScheduleMedsViewController.h */,
+				D84302B6150FD0B200938051 /* ScheduleMedsViewController.m */,
+				D8DF90741511001800C2E35D /* DetailViewController.h */,
+				D8DF90751511001800C2E35D /* DetailViewController.m */,
+				D8DF907B151102BE00C2E35D /* Models */,
+			);
+			path = iMedTracker;
+			sourceTree = "<group>";
+		};
+		D843027C150FD01300938051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8DF907E1511233B00C2E35D /* pill.png */,
+				D8DF907C1511214300C2E35D /* clock.png */,
+				D843027D150FD01300938051 /* iMedTracker-Info.plist */,
+				D843027E150FD01300938051 /* InfoPlist.strings */,
+				D8430281150FD01300938051 /* main.m */,
+				D8430283150FD01300938051 /* iMedTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D84302A4150FD01300938051 /* iMedTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D84302AA150FD01400938051 /* iMedTrackerTests.h */,
+				D84302AB150FD01400938051 /* iMedTrackerTests.m */,
+				D84302A5150FD01300938051 /* Supporting Files */,
+			);
+			path = iMedTrackerTests;
+			sourceTree = "<group>";
+		};
+		D84302A5150FD01300938051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D84302A6150FD01300938051 /* iMedTrackerTests-Info.plist */,
+				D84302A7150FD01400938051 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8DF907B151102BE00C2E35D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8DF9078151102B800C2E35D /* Medecine.h */,
+				D8DF9079151102B800C2E35D /* Medecine.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8430270150FD01300938051 /* iMedTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84302AF150FD01400938051 /* Build configuration list for PBXNativeTarget "iMedTracker" */;
+			buildPhases = (
+				D843026D150FD01300938051 /* Sources */,
+				D843026E150FD01300938051 /* Frameworks */,
+				D843026F150FD01300938051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMedTracker;
+			productName = iMedTracker;
+			productReference = D8430271150FD01300938051 /* iMedTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D843029C150FD01300938051 /* iMedTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84302B2150FD01400938051 /* Build configuration list for PBXNativeTarget "iMedTrackerTests" */;
+			buildPhases = (
+				D8430298150FD01300938051 /* Sources */,
+				D8430299150FD01300938051 /* Frameworks */,
+				D843029A150FD01300938051 /* Resources */,
+				D843029B150FD01300938051 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84302A3150FD01300938051 /* PBXTargetDependency */,
+			);
+			name = iMedTrackerTests;
+			productName = iMedTrackerTests;
+			productReference = D843029D150FD01300938051 /* iMedTrackerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8430268150FD01300938051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D843026B150FD01300938051 /* Build configuration list for PBXProject "iMedTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8430266150FD01300938051;
+			productRefGroup = D8430272150FD01300938051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8430270150FD01300938051 /* iMedTracker */,
+				D843029C150FD01300938051 /* iMedTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D843026F150FD01300938051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8430280150FD01300938051 /* InfoPlist.strings in Resources */,
+				D8430289150FD01300938051 /* MainStoryboard.storyboard in Resources */,
+				D843028E150FD01300938051 /* first.png in Resources */,
+				D8430290150FD01300938051 /* first@2x.png in Resources */,
+				D8430295150FD01300938051 /* second.png in Resources */,
+				D8430297150FD01300938051 /* second@2x.png in Resources */,
+				D8DF907D1511214300C2E35D /* clock.png in Resources */,
+				D8DF907F1511233B00C2E35D /* pill.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D843029A150FD01300938051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84302A9150FD01400938051 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D843029B150FD01300938051 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D843026D150FD01300938051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8430282150FD01300938051 /* main.m in Sources */,
+				D8430286150FD01300938051 /* AppDelegate.m in Sources */,
+				D84302B7150FD0B200938051 /* ScheduleMedsViewController.m in Sources */,
+				D8DF90761511001800C2E35D /* DetailViewController.m in Sources */,
+				D8DF907A151102B800C2E35D /* Medecine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8430298150FD01300938051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84302AC150FD01400938051 /* iMedTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D84302A3150FD01300938051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8430270150FD01300938051 /* iMedTracker */;
+			targetProxy = D84302A2150FD01300938051 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D843027E150FD01300938051 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D843027F150FD01300938051 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8430287150FD01300938051 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8430288150FD01300938051 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		D84302A7150FD01400938051 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84302A8150FD01400938051 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D84302AD150FD01400938051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D84302AE150FD01400938051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D84302B0150FD01400938051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMedTracker/iMedTracker-Prefix.pch";
+				INFOPLIST_FILE = "iMedTracker/iMedTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D84302B1150FD01400938051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMedTracker/iMedTracker-Prefix.pch";
+				INFOPLIST_FILE = "iMedTracker/iMedTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D84302B3150FD01400938051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iMedTracker.app/iMedTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMedTracker/iMedTracker-Prefix.pch";
+				INFOPLIST_FILE = "iMedTrackerTests/iMedTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D84302B4150FD01400938051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iMedTracker.app/iMedTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMedTracker/iMedTracker-Prefix.pch";
+				INFOPLIST_FILE = "iMedTrackerTests/iMedTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D843026B150FD01300938051 /* Build configuration list for PBXProject "iMedTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84302AD150FD01400938051 /* Debug */,
+				D84302AE150FD01400938051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84302AF150FD01400938051 /* Build configuration list for PBXNativeTarget "iMedTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84302B0150FD01400938051 /* Debug */,
+				D84302B1150FD01400938051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84302B2150FD01400938051 /* Build configuration list for PBXNativeTarget "iMedTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84302B3150FD01400938051 /* Debug */,
+				D84302B4150FD01400938051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8430268150FD01300938051 /* Project object */;
+}
