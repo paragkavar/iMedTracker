@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+#import "Medecine.h"
 
 
-@interface ManageDataSQLite : NSObject{
-
-}
-+(void)executeSentence:(NSString *)sentence sentenceIsSelect:(BOOL )isSelect;
+@interface ManageDataSQLite : NSObject
 +(void)createEditableCopyOfDatabaseIfNeeded;
++(NSMutableArray *)getMedsFromDB;
++(void)insertMed:(Medecine *)aMed;
 
 @end

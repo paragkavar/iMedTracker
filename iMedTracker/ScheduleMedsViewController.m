@@ -9,6 +9,7 @@
 #import "ScheduleMedsViewController.h"
 #import "DetailViewController.h"
 #import "Medecine.h"
+#import "ManageDataSQLite.h"
 
 @interface ScheduleMedsViewController ()
 
@@ -36,12 +37,14 @@
     }
 }
 
-
 #pragma mark - Delegate Method
--(void) addMedToList:(Medecine *) med{
+-(void) addMedToList:(Medecine *) med
+{
+    [ManageDataSQLite insertMed:med];
     [self.medsArray addObject:med];
     [self.tableView reloadData];
 }
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -52,11 +55,18 @@
     return self;
 }
 
+- (void)loadMedsArray
+{
+    self.medsArray = [ManageDataSQLite getMedsFromDB];
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.medsArray = [[NSMutableArray alloc] init];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.medsArray = [[NSMutableArray alloc] init];
+    [self loadMedsArray];
 
 }
 
@@ -114,8 +124,6 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-
-
 
 
 @end

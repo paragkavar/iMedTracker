@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83BB40815127B3600A235CA /* ManageDataSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D83BB40715127B3600A235CA /* ManageDataSQLite.m */; };
+		D83BB40915127B8B00A235CA /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D83BB401151271A500A235CA /* libsqlite3.0.dylib */; };
+		D83BB40A15127D0600A235CA /* MedTrakerDB in Resources */ = {isa = PBXBuildFile; fileRef = D8DF90861512623700C2E35D /* MedTrakerDB */; };
 		D8430276150FD01300938051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430275150FD01300938051 /* UIKit.framework */; };
 		D8430278150FD01300938051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430277150FD01300938051 /* Foundation.framework */; };
 		D843027A150FD01300938051 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430279150FD01300938051 /* CoreGraphics.framework */; };
@@ -24,8 +27,6 @@
 		D8DF907A151102B800C2E35D /* Medecine.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF9079151102B800C2E35D /* Medecine.m */; };
 		D8DF907D1511214300C2E35D /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907C1511214300C2E35D /* clock.png */; };
 		D8DF907F1511233B00C2E35D /* pill.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907E1511233B00C2E35D /* pill.png */; };
-		D8DF90851512620B00C2E35D /* ManageDataSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF90841512620B00C2E35D /* ManageDataSQLite.m */; };
-		D8DF90871512623700C2E35D /* MedTrakerDB in Resources */ = {isa = PBXBuildFile; fileRef = D8DF90861512623700C2E35D /* MedTrakerDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D83BB401151271A500A235CA /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D83BB40615127B3600A235CA /* ManageDataSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageDataSQLite.h; sourceTree = "<group>"; };
+		D83BB40715127B3600A235CA /* ManageDataSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageDataSQLite.m; sourceTree = "<group>"; };
 		D8430271150FD01300938051 /* iMedTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMedTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8430275150FD01300938051 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8430277150FD01300938051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +68,6 @@
 		D8DF9079151102B800C2E35D /* Medecine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medecine.m; sourceTree = "<group>"; };
 		D8DF907C1511214300C2E35D /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		D8DF907E1511233B00C2E35D /* pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pill.png; sourceTree = "<group>"; };
-		D8DF90831512620B00C2E35D /* ManageDataSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageDataSQLite.h; sourceTree = "<group>"; };
-		D8DF90841512620B00C2E35D /* ManageDataSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageDataSQLite.m; sourceTree = "<group>"; };
 		D8DF90861512623700C2E35D /* MedTrakerDB */ = {isa = PBXFileReference; lastKnownFileType = file; path = MedTrakerDB; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83BB40915127B8B00A235CA /* libsqlite3.0.dylib in Frameworks */,
 				D8430276150FD01300938051 /* UIKit.framework in Frameworks */,
 				D8430278150FD01300938051 /* Foundation.framework in Frameworks */,
 				D843027A150FD01300938051 /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		D8430274150FD01300938051 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D83BB401151271A500A235CA /* libsqlite3.0.dylib */,
 				D8430275150FD01300938051 /* UIKit.framework */,
 				D8430277150FD01300938051 /* Foundation.framework */,
 				D8430279150FD01300938051 /* CoreGraphics.framework */,
@@ -201,8 +205,8 @@
 		D8DF9082151261D600C2E35D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D8DF90831512620B00C2E35D /* ManageDataSQLite.h */,
-				D8DF90841512620B00C2E35D /* ManageDataSQLite.m */,
+				D83BB40615127B3600A235CA /* ManageDataSQLite.h */,
+				D83BB40715127B3600A235CA /* ManageDataSQLite.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -281,6 +285,7 @@
 				D8430289150FD01300938051 /* MainStoryboard.storyboard in Resources */,
 				D8DF907D1511214300C2E35D /* clock.png in Resources */,
 				D8DF907F1511233B00C2E35D /* pill.png in Resources */,
+				D83BB40A15127D0600A235CA /* MedTrakerDB in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84302A9150FD01400938051 /* InfoPlist.strings in Resources */,
-				D8DF90871512623700C2E35D /* MedTrakerDB in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +325,7 @@
 				D84302B7150FD0B200938051 /* ScheduleMedsViewController.m in Sources */,
 				D8DF90761511001800C2E35D /* DetailViewController.m in Sources */,
 				D8DF907A151102B800C2E35D /* Medecine.m in Sources */,
+				D83BB40815127B3600A235CA /* ManageDataSQLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +334,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84302AC150FD01400938051 /* iMedTrackerTests.m in Sources */,
-				D8DF90851512620B00C2E35D /* ManageDataSQLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

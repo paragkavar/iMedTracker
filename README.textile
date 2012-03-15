@@ -2,9 +2,16 @@ h1. iMedTracker
 
 iMedTracker is an very simple app works as a Med reminder that will alert you every time you need to take a Med. It will allow you to enter all your Meds, setup reminders, and mark when you have taken them.
 
-!http://goo.gl/KrH6l! !http://goo.gl/LakDV!
+!http://goo.gl/vhVz5! !http://goo.gl/LakDV!
 
-*The project is currently in development
+h2. Project Info
+
+* Xcode 4.3.1
+* iOS 5.1
+* Storyboards
+
+
+The project is currently in development
   
 
 

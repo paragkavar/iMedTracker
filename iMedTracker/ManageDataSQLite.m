@@ -7,8 +7,9 @@
 //
 
 #import "ManageDataSQLite.h"
-#define DATABASE_NAME @"MedTrakerDB"
 
+#define DATABASE_NAME @"MedTrakerDB"
+#define SELECT_ALL_MEDS @"SELECT * FROM Meds"
 
 @implementation ManageDataSQLite
 
@@ -22,47 +23,73 @@
     
     return self;
 }
-
-+(void)executeSentence:(NSString *)sentence sentenceIsSelect:(BOOL )isSelect{
-    // Variables para realizar la consulta
++(void)insertMed:(Medecine *)aMed
+{
     static sqlite3 *db;
-    sqlite3_stmt *resultado;
-    const char* siguiente;
+    sqlite3_stmt *result;
+    const char* next;
     
-    // Buscar el archivo de base de datos
+    NSString *sentence = [NSString stringWithFormat:@"INSERT INTO Meds (Medecine,Dosis) VALUES ( '%@', %i)",aMed.name,aMed.dosis];
+    
+      
+    // Find DB file
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:DATABASE_NAME];
     
-    // Abre el archivo de base de datos
+    // Open DB
     if (sqlite3_open([path UTF8String], &db) == SQLITE_OK) {
-        
-        if (isSelect){
-            
-            // Ejecuta la consulta
-            if ( sqlite3_prepare(db,[sentence UTF8String],[sentence length],&resultado,&siguiente) == SQLITE_OK ){
-                
-                // Recorre el resultado
-                while (sqlite3_step(resultado)==SQLITE_ROW){
-                    NSLog([NSString stringWithFormat:@"ID:%@ NAME:%@ ", 
-                           [NSString stringWithUTF8String: (char *)sqlite3_column_text(resultado, 0)], 
-                           [NSString stringWithUTF8String: (char *)sqlite3_column_text(resultado, 1)] 
-                           ]);
-                }
-            }
+        // Exec Query
+        if ( sqlite3_prepare_v2(db,[sentence UTF8String],[sentence length],&result,&next) == SQLITE_OK ){
+            sqlite3_step(result);
+            sqlite3_finalize(result);
+        }else {
+            NSLog(@"Error in insert Med");
         }
-        else {
-            // Ejecuta la consulta
-            if ( sqlite3_prepare_v2(db,[sentence UTF8String],[sentence length],&resultado,&siguiente) == SQLITE_OK ){
-                sqlite3_step(resultado);
-                sqlite3_finalize(resultado);
+
+    }
+    // Close DB
+    sqlite3_close(db);
+}
+
+
++(NSMutableArray *)getMedsFromDB
+{
+    static sqlite3 *db;
+    sqlite3_stmt *result;
+    const char* next;
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    // Find DB file
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:DATABASE_NAME];
+    
+    // Open DB
+    if (sqlite3_open([path UTF8String], &db) == SQLITE_OK) {
+        // Exec Query
+        if ( sqlite3_prepare(db,[SELECT_ALL_MEDS UTF8String],[SELECT_ALL_MEDS length],&result,&next) == SQLITE_OK ){
+            
+            // Get Results
+            while (sqlite3_step(result)==SQLITE_ROW){
+                Medecine *med = [[Medecine alloc] init];
+                
+                med.name = [NSString stringWithUTF8String: (char *)sqlite3_column_text(result, 1)];
+                med.dosis = [[NSString stringWithUTF8String: (char *)sqlite3_column_text(result, 2)] intValue];
+                
+                [array addObject:med];
+                NSLog(@"Array position : %i -  Med name: %@ , Med Dosis: %i",[array count],med.name,med.dosis);
+                
+
             }
         }
     }
-    // Cierra el archivo de base de datos
-    sqlite3_close(db);
-
+       
     
+    // Close DB
+    sqlite3_close(db);
+    return array;
 }
 
 +(void)createEditableCopyOfDatabaseIfNeeded{
