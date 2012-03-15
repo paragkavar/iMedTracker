@@ -14,10 +14,6 @@
 		D8430282150FD01300938051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8430281150FD01300938051 /* main.m */; };
 		D8430286150FD01300938051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8430285150FD01300938051 /* AppDelegate.m */; };
 		D8430289150FD01300938051 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8430287150FD01300938051 /* MainStoryboard.storyboard */; };
-		D843028E150FD01300938051 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D843028D150FD01300938051 /* first.png */; };
-		D8430290150FD01300938051 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D843028F150FD01300938051 /* first@2x.png */; };
-		D8430295150FD01300938051 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D8430294150FD01300938051 /* second.png */; };
-		D8430297150FD01300938051 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8430296150FD01300938051 /* second@2x.png */; };
 		D843029F150FD01300938051 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D843029E150FD01300938051 /* SenTestingKit.framework */; };
 		D84302A0150FD01300938051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430275150FD01300938051 /* UIKit.framework */; };
 		D84302A1150FD01300938051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8430277150FD01300938051 /* Foundation.framework */; };
@@ -28,6 +24,8 @@
 		D8DF907A151102B800C2E35D /* Medecine.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF9079151102B800C2E35D /* Medecine.m */; };
 		D8DF907D1511214300C2E35D /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907C1511214300C2E35D /* clock.png */; };
 		D8DF907F1511233B00C2E35D /* pill.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907E1511233B00C2E35D /* pill.png */; };
+		D8DF90851512620B00C2E35D /* ManageDataSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF90841512620B00C2E35D /* ManageDataSQLite.m */; };
+		D8DF90871512623700C2E35D /* MedTrakerDB in Resources */ = {isa = PBXBuildFile; fileRef = D8DF90861512623700C2E35D /* MedTrakerDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +50,6 @@
 		D8430284150FD01300938051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8430285150FD01300938051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8430288150FD01300938051 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D843028D150FD01300938051 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		D843028F150FD01300938051 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		D8430294150FD01300938051 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		D8430296150FD01300938051 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		D843029D150FD01300938051 /* iMedTrackerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMedTrackerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D843029E150FD01300938051 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D84302A6150FD01300938051 /* iMedTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iMedTrackerTests-Info.plist"; sourceTree = "<group>"; };
@@ -70,6 +64,9 @@
 		D8DF9079151102B800C2E35D /* Medecine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medecine.m; sourceTree = "<group>"; };
 		D8DF907C1511214300C2E35D /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		D8DF907E1511233B00C2E35D /* pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pill.png; sourceTree = "<group>"; };
+		D8DF90831512620B00C2E35D /* ManageDataSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageDataSQLite.h; sourceTree = "<group>"; };
+		D8DF90841512620B00C2E35D /* ManageDataSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageDataSQLite.m; sourceTree = "<group>"; };
+		D8DF90861512623700C2E35D /* MedTrakerDB */ = {isa = PBXFileReference; lastKnownFileType = file; path = MedTrakerDB; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,19 +126,13 @@
 		D843027B150FD01300938051 /* iMedTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D8DF9082151261D600C2E35D /* Helpers */,
+				D8DF907B151102BE00C2E35D /* Models */,
+				D8DF90811512611900C2E35D /* ViewControllers */,
 				D8430284150FD01300938051 /* AppDelegate.h */,
 				D8430285150FD01300938051 /* AppDelegate.m */,
 				D8430287150FD01300938051 /* MainStoryboard.storyboard */,
-				D843028D150FD01300938051 /* first.png */,
-				D843028F150FD01300938051 /* first@2x.png */,
-				D8430294150FD01300938051 /* second.png */,
-				D8430296150FD01300938051 /* second@2x.png */,
 				D843027C150FD01300938051 /* Supporting Files */,
-				D84302B5150FD0B200938051 /* ScheduleMedsViewController.h */,
-				D84302B6150FD0B200938051 /* ScheduleMedsViewController.m */,
-				D8DF90741511001800C2E35D /* DetailViewController.h */,
-				D8DF90751511001800C2E35D /* DetailViewController.m */,
-				D8DF907B151102BE00C2E35D /* Models */,
 			);
 			path = iMedTracker;
 			sourceTree = "<group>";
@@ -149,9 +140,9 @@
 		D843027C150FD01300938051 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8DF907E1511233B00C2E35D /* pill.png */,
-				D8DF907C1511214300C2E35D /* clock.png */,
+				D8DF90801512610100C2E35D /* images */,
 				D843027D150FD01300938051 /* iMedTracker-Info.plist */,
+				D8DF90861512623700C2E35D /* MedTrakerDB */,
 				D843027E150FD01300938051 /* InfoPlist.strings */,
 				D8430281150FD01300938051 /* main.m */,
 				D8430283150FD01300938051 /* iMedTracker-Prefix.pch */,
@@ -185,6 +176,35 @@
 				D8DF9079151102B800C2E35D /* Medecine.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D8DF90801512610100C2E35D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D8DF907E1511233B00C2E35D /* pill.png */,
+				D8DF907C1511214300C2E35D /* clock.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D8DF90811512611900C2E35D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D84302B5150FD0B200938051 /* ScheduleMedsViewController.h */,
+				D84302B6150FD0B200938051 /* ScheduleMedsViewController.m */,
+				D8DF90741511001800C2E35D /* DetailViewController.h */,
+				D8DF90751511001800C2E35D /* DetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D8DF9082151261D600C2E35D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D8DF90831512620B00C2E35D /* ManageDataSQLite.h */,
+				D8DF90841512620B00C2E35D /* ManageDataSQLite.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +279,6 @@
 			files = (
 				D8430280150FD01300938051 /* InfoPlist.strings in Resources */,
 				D8430289150FD01300938051 /* MainStoryboard.storyboard in Resources */,
-				D843028E150FD01300938051 /* first.png in Resources */,
-				D8430290150FD01300938051 /* first@2x.png in Resources */,
-				D8430295150FD01300938051 /* second.png in Resources */,
-				D8430297150FD01300938051 /* second@2x.png in Resources */,
 				D8DF907D1511214300C2E35D /* clock.png in Resources */,
 				D8DF907F1511233B00C2E35D /* pill.png in Resources */,
 			);
@@ -273,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84302A9150FD01400938051 /* InfoPlist.strings in Resources */,
+				D8DF90871512623700C2E35D /* MedTrakerDB in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84302AC150FD01400938051 /* iMedTrackerTests.m in Sources */,
+				D8DF90851512620B00C2E35D /* ManageDataSQLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
