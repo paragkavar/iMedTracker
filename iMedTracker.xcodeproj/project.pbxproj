@@ -27,6 +27,7 @@
 		D8DF907A151102B800C2E35D /* Medecine.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF9079151102B800C2E35D /* Medecine.m */; };
 		D8DF907D1511214300C2E35D /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907C1511214300C2E35D /* clock.png */; };
 		D8DF907F1511233B00C2E35D /* pill.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907E1511233B00C2E35D /* pill.png */; };
+		D8EE17D61513BE3200E6D579 /* addMedDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EE17D51513BE3200E6D579 /* addMedDefault.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D8DF907C1511214300C2E35D /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		D8DF907E1511233B00C2E35D /* pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pill.png; sourceTree = "<group>"; };
 		D8DF90861512623700C2E35D /* MedTrakerDB */ = {isa = PBXFileReference; lastKnownFileType = file; path = MedTrakerDB; sourceTree = "<group>"; };
+		D8EE17D51513BE3200E6D579 /* addMedDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addMedDefault.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		D8DF90801512610100C2E35D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D8EE17D51513BE3200E6D579 /* addMedDefault.png */,
 				D8DF907E1511233B00C2E35D /* pill.png */,
 				D8DF907C1511214300C2E35D /* clock.png */,
 			);
@@ -286,6 +289,7 @@
 				D8DF907D1511214300C2E35D /* clock.png in Resources */,
 				D8DF907F1511233B00C2E35D /* pill.png in Resources */,
 				D83BB40A15127D0600A235CA /* MedTrakerDB in Resources */,
+				D8EE17D61513BE3200E6D579 /* addMedDefault.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +430,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMedTracker/iMedTracker-Prefix.pch";
 				INFOPLIST_FILE = "iMedTracker/iMedTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -437,6 +442,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMedTracker/iMedTracker-Prefix.pch";
 				INFOPLIST_FILE = "iMedTracker/iMedTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

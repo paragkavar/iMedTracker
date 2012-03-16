@@ -51,14 +51,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZI-Jg-OyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="74Y-pI-np8" customClass="DetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SJs-4T-y17">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="w4q-5d-Xdm">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wrj-RN-EFX">
+                                    <rect key="frame" x="122" y="10" width="76" height="74"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                    <state key="normal" backgroundImage="addMedDefault.png">
+                                        <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showActionSheet:" destination="74Y-pI-np8" eventType="touchUpInside" id="YS1-eo-QOd"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="85Y-tL-sHM">
+                                    <rect key="frame" x="122" y="10" width="76" height="74"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </view>
                         <sections>
                             <tableViewSection id="ffX-cf-N8w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="azr-MR-lA3">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="104" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
@@ -82,7 +108,7 @@
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SLm-Us-rBt">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="149" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
@@ -117,6 +143,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="dosis" destination="QRl-4s-zaC" id="6lP-hD-SPu"/>
+                        <outlet property="medImage" destination="85Y-tL-sHM" id="j6e-DA-9qo"/>
                         <outlet property="name" destination="l2Z-jN-Bff" id="2dh-lr-W3M"/>
                     </connections>
                 </tableViewController>
@@ -197,14 +224,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addMedDefault.png" width="74" height="73"/>
         <image name="clock.png" width="30" height="30"/>
-        <image name="pill.png" width="16" height="16"/>
+        <image name="pill.png" width="30" height="12"/>
     </resources>
     <classes>
         <class className="DetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="showActionSheet:"/>
                 <relationship kind="outlet" name="dosis" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="medImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="name" candidateClass="UITextField"/>
             </relationships>
         </class>
@@ -218,6 +248,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="36k-Ma-Zga"/>
+        <segue reference="lMF-MW-QRQ"/>
     </inferredMetricsTieBreakers>
 </document>
