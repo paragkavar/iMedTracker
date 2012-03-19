@@ -23,6 +23,10 @@
 		D84302A9150FD01400938051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D84302A7150FD01400938051 /* InfoPlist.strings */; };
 		D84302AC150FD01400938051 /* iMedTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84302AB150FD01400938051 /* iMedTrackerTests.m */; };
 		D84302B7150FD0B200938051 /* ScheduleMedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84302B6150FD0B200938051 /* ScheduleMedsViewController.m */; };
+		D8479BA81517C20400A47053 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8479BA71517C20400A47053 /* icon.png */; };
+		D8479BAB1517C21700A47053 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8479BAA1517C21700A47053 /* icon@2x.png */; };
+		D8479BAD1517C42700A47053 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D8479BAC1517C42700A47053 /* Default.png */; };
+		D8479BAF1517C42B00A47053 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8479BAE1517C42B00A47053 /* Default@2x.png */; };
 		D8DF90761511001800C2E35D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF90751511001800C2E35D /* DetailViewController.m */; };
 		D8DF907A151102B800C2E35D /* Medecine.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF9079151102B800C2E35D /* Medecine.m */; };
 		D8DF907D1511214300C2E35D /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D8DF907C1511214300C2E35D /* clock.png */; };
@@ -63,6 +67,10 @@
 		D84302AB150FD01400938051 /* iMedTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMedTrackerTests.m; sourceTree = "<group>"; };
 		D84302B5150FD0B200938051 /* ScheduleMedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleMedsViewController.h; sourceTree = "<group>"; };
 		D84302B6150FD0B200938051 /* ScheduleMedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleMedsViewController.m; sourceTree = "<group>"; };
+		D8479BA71517C20400A47053 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		D8479BAA1517C21700A47053 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		D8479BAC1517C42700A47053 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		D8479BAE1517C42B00A47053 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		D8DF90741511001800C2E35D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D8DF90751511001800C2E35D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D8DF9078151102B800C2E35D /* Medecine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medecine.h; sourceTree = "<group>"; };
@@ -187,6 +195,10 @@
 		D8DF90801512610100C2E35D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D8479BAE1517C42B00A47053 /* Default@2x.png */,
+				D8479BAC1517C42700A47053 /* Default.png */,
+				D8479BAA1517C21700A47053 /* icon@2x.png */,
+				D8479BA71517C20400A47053 /* icon.png */,
 				D8EE17D51513BE3200E6D579 /* addMedDefault.png */,
 				D8DF907E1511233B00C2E35D /* pill.png */,
 				D8DF907C1511214300C2E35D /* clock.png */,
@@ -290,6 +302,10 @@
 				D8DF907F1511233B00C2E35D /* pill.png in Resources */,
 				D83BB40A15127D0600A235CA /* MedTrakerDB in Resources */,
 				D8EE17D61513BE3200E6D579 /* addMedDefault.png in Resources */,
+				D8479BA81517C20400A47053 /* icon.png in Resources */,
+				D8479BAB1517C21700A47053 /* icon@2x.png in Resources */,
+				D8479BAD1517C42700A47053 /* Default.png in Resources */,
+				D8479BAF1517C42B00A47053 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
